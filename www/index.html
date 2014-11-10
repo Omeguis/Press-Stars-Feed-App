@@ -22,13 +22,44 @@
 <html>
     <head>
         <meta charset="utf-8" />
+<!-- For third-generation iPad with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="res/screen/android/screen-mdpi-portrait.png">
+<!-- For iPhone with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="res/screen/android/screen-mdpi-portrait.png">
+<!-- For first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="res/screen/android/screen-mdpi-portrait.png">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link rel="apple-touch-icon-precomposed" href="res/screen/android/screen-mdpi-portrait.png">
+
+<!-- iPhone SPLASHSCREEN-->
+<link href="res/screen/android/screen-mdpi-portrait.png" media="(device-width: 320px)" rel="apple-touch-startup-image">
+<!-- iPhone (Retina) SPLASHSCREEN-->
+<link href="res/screen/android/screen-mdpi-portrait.png" media="(device-width: 320px) and (device-height: 460px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+<!-- iPhone 5 (Retina) SPLASHSCREEN-->
+<link href="res/screen/android/screen-mdpi-portrait.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+<!-- iPad (non-Retina) (Portrait) -->
+<link href="res/screen/android/screen-mdpi-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" rel="apple-touch-startup-image" />
+<!-- iPad (non-Retina) (Landscape) -->
+<link href="res/screen/android/screen-mdpi-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" rel="apple-touch-startup-image" />
+<!-- iPad (Retina) (Portrait) -->
+<link href="res/screen/android/screen-mdpi-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<!-- iPad (Retina) (Landscape) -->
+<link href="res/screen/android/screen-mdpi-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />        
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <script src="js/jquery.js"></script>
-        <script src="js/jquerymobile.js"></script>   
+        <script src="js/jquerymobile.js"></script>
+        <script type="text/javascript">
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    document.addEventListener("backbutton", function (e) {
+        e.preventDefault();
+    }, false );
+}
+        </script>   
         <!-- Stylesheets --> 
         <link rel="stylesheet" href="css/jquerymobile.css">
         <link rel="stylesheet" href="css/styles.css">             
